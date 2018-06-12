@@ -34,7 +34,7 @@ function validateArg() {
 }
 
 function createUser() {
-    log "Parsing user data: \"$@\""
+    log "Parsing user data"
 
     IFS=':' read -a args <<< $@
     index=0
