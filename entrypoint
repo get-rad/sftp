@@ -106,6 +106,9 @@ function createUser() {
             fi
         done
     fi
+
+    # Install git-lfs for user
+    sudo -u $user git lfs install
 }
 
 # Allow running other programs, e.g. bash
